@@ -6,7 +6,7 @@ import cicon from '../Assets/cicon.webp'
     
   export function handleWhatsAppMessage(actionType) {
     // Base URL for WhatsApp API
-    const baseWhatsappUrl = "https://api.whatsapp.com/send?phone=+(your number)";
+    const baseWhatsappUrl = "https://api.whatsapp.com/send?phone=+123456789";
 
       if (actionType === "default") {
       // Default message for WhatsApp icon

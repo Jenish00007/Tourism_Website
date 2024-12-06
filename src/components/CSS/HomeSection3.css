@@ -1,265 +1,306 @@
 /* General Container Styling */
 .homepage-container {
-    width: auto;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* HomeSection3 CSS */
-  .tourism-container {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 40px;
-  }
-  
-  .left-section {
-    flex: 1;
-  }
-  
-  .heading {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .description {
-    font-size:1.3rem;
-    margin-bottom: 20px;
-    color: #555;
-  }
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    gap: 10px;
-  }
-  
-  .service-card {
-    /* background: #f9f9f9; */
-    padding: 5px;
-    /* border-radius: 10px; */
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .service-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .service-image {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-  }
-  
-  .service-name {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-  }
-  
-  .service-description {
-    font-size:1rem;
-    color: #777;
-  }
-  
-  .right-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .tourism-image {
-    width: 100%;
-    height: 500px;
-    border-radius: 10px;
-  }
-  
-  /* Home CSS */
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .top-section {
-    display: flex;
-    gap: 20px;
-    justify-content: flex-start;
-    align-items:flex-start;
-  }
-  
-  .image-section {
-    flex: 1;
-  }
-  
-  .image1 {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    position:relative;
-    margin:50px auto;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .image2{
-    position: relative;
-    bottom:150px;
-    left:250px;
-    border-radius: 10px;
-    z-index:2;
-  }
-  .text-section {
-    flex: 1;
-    margin-left:50px;
-  }
-  
-  .text-section h2 {
-    font-size: 2rem;
-  }
-  .text-section p {
-    font-size: 1.2rem;
-  }  
-  .text-section ul {
-    font-size: 1rem;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .explore-button {
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    background: #333;
-    color: white;
-    border: none;
-    border:1px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .explore-butto:hover {
-    background-color:#555;
-  }
-  /* Responsive Media Queries */
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HomeSection3 CSS */
+.tourism-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.left-section {
+  flex: 1;
+  padding: 30px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  padding-left: 80px;
+}
+
+.description {
+  max-width:400px;
+  text-align:justify;
+  font-size:1.3rem;
+  margin-bottom: 20px;
+  color: #555;
+  padding-left: 80px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 10px;
+  padding-left: 50px;
+}
+
+.service-card {
+  /* background: #f9f9f9; */
+  padding: 5px;
+  /* border-radius: 10px; */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.service-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.service-description {
+  font-size:1rem;
+  color: #777;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  width: 300px;
+  height: 500px;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 60px;
+  padding-right: 30px;
+}
+
+.tourism-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+.tourism-image {
+  transform: scale(1.05);
+}
+/* Home CSS */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.top-section {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items:flex-start;
+}
+
+.image-section {
+  flex: 1;
+  border-radius: 10px;
+}
+
+.image1 {
+  width: 500px;
+  height: auto;
+  padding:20px;
+  border-radius:10px;
+  position:relative;
+  margin:50px auto;
+  overflow: hidden;
+  z-index: 1;
+}
+.image2{
+  position: relative;
+  bottom:150px;
+  left:250px;
+  border-radius: 10px;
+  z-index:2;
+}
+.image-section {
+  transform: scale(1.05);
+}
+.text-section {
+  flex: 1;
+  margin-left:50px;
+}
+
+.text-section h2 {
+  font-size: 2rem;
+}
+.text-section p {
+  font-size: 1.2rem;
+}  
+.text-section ul {
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.explore-button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border:1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.explore-butto:hover {
+  background-color:#555;
+}
+/* Responsive Media Queries */
 @media (max-width: 1200px) {
-  .tourism-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.tourism-container {
+  flex-direction: column;
+  align-items: center;
+}
 
-  .services-grid {
-    grid-template-columns: repeat(1, minmax(200px, 1fr));
-  }
+.services-grid {
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
+}
 
-  .tourism-image {
-    height: 400px;
-  }
+.tourism-image {
+  height: 400px;
+}
 
-  .heading {
-    font-size: 2rem;
-    text-align: center;
-  }
+.heading {
+  font-size: 2rem;
+  text-align: center;
+}
 
-  .description {
-    font-size: 1.2rem;
-    text-align: center;
-  }
+.description {
+  font-size: 1.2rem;
+  text-align: center;
+}
 }
 
 @media (max-width: 768px) {
-  .tourism-container {
-    gap: 15px;
-  }
+.tourism-container {
+  gap: 15px;
+}
 
-  .heading {
-    font-size: 1.8rem;
-  }
+.heading {
+  font-size: 1.8rem;
+}
 
-  .description {
-    font-size: 1.1rem;
-  }
+.description {
+  font-size: 1.1rem;
+}
 
-  .service-card {
-    padding: 10px;
-  }
+.service-card {
+  padding: 10px;
+}
 
-  .service-image {
-    width: 60px;
-    height: 60px;
-  }
+.service-image {
+  width: 60px;
+  height: 60px;
+}
 
-  .service-name {
-    font-size: 1rem;
-  }
+.service-name {
+  font-size: 1rem;
+}
 
-  .service-description {
-    font-size: 0.9rem;
-  }
+.service-description {
+  font-size: 0.9rem;
+}
 
-  .tourism-image {
-    height: 300px;
-  }
+.tourism-image {
+  height: 300px;
+}
 
-  .top-section {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
+.top-section {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
 
-  .text-section {
-    margin-left: 0;
-    text-align: center;
-  }
+.text-section {
+  margin-left: 0;
+  text-align: center;
+}
 
-  .image1 {
-    width: 100%;
-  }
-
-  .image2 {
-    width: 80%;
-    bottom: 0;
-    left: 0;
-  }
+.image1 {
+  width: 300px;
+  height: auto;
+  padding:20px;
+  border-radius: 10px;
+  position:relative;
+  margin:50px auto;
+  overflow: hidden;
+  z-index: 1;
+}
+.image2{
+  position: relative;
+  bottom:150px;
+  left:250px;
+  border-radius: 10px;
+  z-index:2;
+}
 }
 
 @media (max-width: 480px) {
-  .heading {
-    font-size: 1.5rem;
-  }
+.heading {
+  font-size: 1.5rem;
+}
 
-  .description {
-    font-size: 1rem;
-  }
+.description {
+  font-size: 1rem;
+}
 
-  .service-image {
-    width: 50px;
-    height: 50px;
-  }
+.service-image {
+  width: 50px;
+  height: 50px;
+}
 
-  .service-name {
-    font-size: 0.9rem;
-  }
+.service-name {
+  font-size: 0.9rem;
+}
 
-  .service-description {
-    font-size: 0.8rem;
-  }
+.service-description {
+  font-size: 0.8rem;
+}
 
-  .tourism-image {
-    height: 200px;
-  }
+.tourism-image {
+  height: 200px;
+}
+.image1 {
+  width: 350px;
+  height: auto;
+  padding:20px;
+  border-radius: 10px;
+  position:relative;
+  margin:50px auto;
+  overflow: hidden;
+  z-index: 1;
+}
+.image2{
+  position: relative;
+  bottom:150px;
+  left:250px;
+  border-radius: 10px;
+  z-index:2;
+}
+.explore-button {
+  font-size: 1rem;
+  padding: 8px 16px;
+}
 
-  .explore-button {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
+.text-section h2 {
+  font-size: 1.8rem;
+}
 
-  .text-section h2 {
-    font-size: 1.8rem;
-  }
+.text-section p {
+  font-size: 1rem;
+}
 
-  .text-section p {
-    font-size: 1rem;
-  }
-
-  .text-section ul {
-    font-size: 0.9rem;
-  }
+.text-section ul {
+  font-size: 0.9rem;
+}
 }

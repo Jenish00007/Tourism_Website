@@ -1,39 +1,51 @@
-/* General Styles */
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+}/* General Styles */
 .contact-page {
-  width: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   overflow-x: hidden; /* Removes horizontal scrollbar */
 }
 
 /* Cover Image Section */
 .cover-image {
   position: relative;
-  width: 100%;
-  height: 60vh; /* Adjust for cover image height */
+  width: auto;
+  height: 50vh; 
+  background-color: #f4f4f4;
+  border-radius:10px;
   overflow: hidden;
+  
 }
 
 .cover-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image covers the container */
+  object-fit: cover;
+  border-radius:10px;
+  animation: zoomOut 3s ease-in-out infinite alternate;
 }
 
 .cover-image h1,
 .cover-image p {
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
   text-align: center;
   color: white;
+  transform: translate(-50%, -50%);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .cover-image h1 {
   top: 30%;
-  font-size: 2.5rem;
   margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 .cover-image p {

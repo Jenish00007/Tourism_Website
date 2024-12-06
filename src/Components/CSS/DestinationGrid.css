@@ -1,7 +1,7 @@
 /* Grid container */
 .tourism-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
   gap: 20px;
   padding: 20px;
   animation: fadeIn 1s ease-in-out; /* Fade-in effect for the grid container */
@@ -46,7 +46,7 @@
 }
 
 .tourism-item:hover .tourism-title {
-  color:lightblue; /* Change title color on hover */
+  color: lightblue; /* Change title color on hover */
 }
 
 /* Description styling */
@@ -82,8 +82,8 @@
   display: inline-block;
   margin-top: 10px;
   padding: 9px 18px;
-  background-color:gray; /* Button color */
-  color: white;
+  background-color: gray; /* Button color */
+  color: lightgoldenrodyellow;
   font-size: 14px;
   font-weight: bold;
   border: none;
@@ -94,4 +94,20 @@
 
 .read-more:hover {
   background-color: lightgrey; /* Darker shade on hover */
+}
+
+/* Responsive Design - Adjust grid for smaller screens */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  .tourism-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+/* For mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .tourism-grid {
+    grid-template-columns: 1fr; /* 1 column for mobile phones */
+  }
 }

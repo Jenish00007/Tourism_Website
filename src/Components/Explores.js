@@ -1,50 +1,63 @@
 import React from "react";
 import "./CSS/Explore.css";
 
+import MountainImage from "../Assets/Mountain.jpg";
+import BeachImage from "../Assets/beach.jpg";
+import IslandImage from "../Assets/island.jpg";
+import SunsetImage from "../Assets/sunset.jpg";
+import HeroImage from "../Assets/hero.jpg"; // Background image for Hero Section
+
 const Explore = () => {
-  const destinations = [
-    { name: "Beach Paradise", img: require("../Assets/beach.jpg") },
-    { name: "Tropical Escape", img: require("../Assets/tropical.jpg") },
-    { name: "Mountain Retreat", img: require("../Assets/Mountain.jpg") },
-    { name: "Cultural Wonders", img: require("../Assets/culture.jpg") },
-    { name: "Rainforest Adventure", img: require("../Assets/rainforest.jpg") },
-    { name: "City Nights", img: require("../Assets/city.jpg") },
-    { name: "Desert Oasis", img: require("../Assets/desert.jpg") },
-    { name: "Snowy Peaks", img: require("../Assets/snow.jpg") },
-    { name: "Island Getaway", img: require("../Assets/island.jpg") },
-    { name: "Historic Landmarks", img: require("../Assets/historical.jpg") },
-    { name: "Ocean Bliss", img: require("../Assets/underwater.jpg") },
-    { name: "Urban Skylines", img: require("../Assets/skylines.jpg") },
-    { name: "Wildlife Safari", img: require("../Assets/safari.jpg")},   
-     { name: "Sunset Valley", img: require("../Assets/sunset.jpg") },
-     { name: "Secluded Lagoon", img: require("../Assets/lagoon.jpg") },
-
-
-
-
-  ];
-
   return (
     <div className="explore-page">
-      
-      <div className="main-content">
-        <div className="header">
-          <h1>Explore Destinations</h1>
-          <div className="nav-buttons">
-            <button>Themes</button>
-            <button>Adventure</button>
-            <button>Culture</button>
+      {/* Hero Section */}
+      <header
+        className="explore-section"
+        style={{
+          backgroundImage: `url(${HeroImage})`, // Set background image
+          backgroundSize: "cover", // Ensures the image covers the section
+          backgroundPosition: "center", // Center the image
+          backgroundRepeat: "no-repeat", // Prevent tiling
+          height: "70vh", // Adjust height as needed
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "#ffffff", // Ensure text is visible
+          textAlign: "center",
+          padding: "20px",
+        }}
+      >
+        <div className="explore-content">
+          <h1 className="explore-title">Explore</h1>
+          <p className="explore-subtitle">
+            Discover breathtaking destinations and plan your perfect trip.
+          </p>
+          <div className="search-bar">
+            <input type="text" placeholder="Enter destination..." />
+            <button>Search</button>
           </div>
         </div>
-        <div className="grid">
-          {destinations.map((item, index) => (
-            <div className="card" key={index}>
-              <img src={item.img} alt={item.name} />
-              <p>{item.name}</p>
-            </div>
-          ))}
+      </header>
+
+      {/* Explore Grid */}
+      <section className="explore-grid">
+        <div className="grid-item">
+          <img src={MountainImage} alt="Mountain" className="grid-image" />
+          <h3 className="grid-title">Mountains</h3>
         </div>
-      </div>
+        <div className="grid-item">
+          <img src={BeachImage} alt="Beach" className="grid-image" />
+          <h3 className="grid-title">Beach</h3>
+        </div>
+        <div className="grid-item">
+          <img src={IslandImage} alt="island" className="grid-image" />
+          <h3 className="grid-title">Island</h3>
+        </div>
+        <div className="grid-item">
+          <img src={SunsetImage} alt="sunset" className="grid-image" />
+          <h3 className="grid-title">Sunset</h3>
+        </div>
+      </section>
     </div>
   );
 };

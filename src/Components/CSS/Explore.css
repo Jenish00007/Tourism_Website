@@ -1,192 +1,86 @@
-/* General Styling */
-body {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #f5f5f5;
+
+/* Hero Section */
+.explore-section {
+  text-align: center;
+  padding: 100px 20px; /* Increased padding for more height */
+  background-color: #007bff;
+  color:black;
+  margin-bottom: 40px;
+  height: 400px; /* Fixed height */
+  width: 100%; /* Full width */
 }
 
-/* Animation Keyframes */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.explore-title {
+  font-size: 3rem; /* Increased title size */
+  margin-bottom: 20px;
+  color: black; /* Increased space below title */
 }
 
-@keyframes hoverGlow {
-  0% {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  100% {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
+.explore-subtitle {
+  font-size: 1.5rem; /* Increased subtitle font size */
+  margin-bottom: 30px;
+  color:black; /* Increased space below subtitle */
 }
 
-/* Container Styling */
-.explore-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
+.search-bar input {
+  padding: 12px; /* Increased padding for the input */
+  width: 350px; /* Increased width of the input */
+}
+
+.search-bar button {
+  padding: 12px 25px; /* Increased button padding */
+  font-size: 1rem; /* Adjusted button text size */
+}
+/* Grid Section */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Add spacing between the grid items */
   padding: 20px;
-  box-sizing: border-box;
 }
-
-.main-content {
-  width: 100%;
-  max-width: 1200px;
-  padding: 20px;
+.grid-item {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  animation: fadeIn 1s ease-out; /* Apply fade-in animation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
 }
-
-/* Header Styling */
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.header h1 {
-  font-size: 2rem;
-  margin: 0;
-  flex: 1;
-  animation: fadeIn 1.5s ease-out;
-}
-
-.nav-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-
-.nav-buttons button {
-  margin: 5px 0;
-  padding: 8px 15px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-buttons button:hover {
-  background-color: #0056b3;
+.grid-item:hover {
   transform: scale(1.05);
 }
 
-/* Grid Styling */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeIn 1s ease-out;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  animation: hoverGlow 0.5s alternate ease-in-out infinite;
-}
-
-.card img {
+.grid-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  transition: transform 0.3s ease;
 }
-
-.card:hover img {
-  transform: scale(1.05);
-}
-
-.card p {
-  font-size: 1rem;
+.grid-title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
 }
 
-/* Responsive Design: For tablets (768px and below) */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
+/* Animation Keyframes for Zoom-In */
+@keyframes heroZoomIn {
+  0% {
+    transform: scale(1); /* Initial size */
   }
-
-  .header h1 {
-    font-size: 1.8rem;
-  }
-
-  .nav-buttons {
-    justify-content: center;
-  }
-
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-  }
-
-  .card img {
-    height: 180px;
-  }
-
-  .card p {
-    font-size: 0.9rem;
+  100% {
+    transform: scale(1.2); /* Zoom in */
   }
 }
 
-/* Responsive Design: For phones (480px and below) */
-@media (max-width: 480px) {
-  .main-content {
-    padding: 10px;
-  }
+/* Hero Section */
+.explore-section {
+  text-align: center;
+  padding: 100px 20px; /* Increased padding for more height */
 
-  .header h1 {
-    font-size: 1.5rem;
-  }
+  background-size: cover; /* Make sure the image covers the section */
+  color:grey;
+  margin-bottom: 40px;
+  height: 400px; /* Fixed height */
+  width: 100%; /* Full width */
+  animation: zoomIn 3s ease-in-out forwards; /* Run once and stay at the final state */
 
-  .nav-buttons button {
-    padding: 6px 12px;
-    font-size: 0.8rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .card img {
-    height: 100px;
-  }
-
-  .card p {
-    font-size: 0.8rem;
-  }
 }

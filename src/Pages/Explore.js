@@ -1,10 +1,11 @@
 import  Explores from "../Components/Explores";
+
 const Explore = () => {
     return (
-      <>
+      
       <Explores />
       
-      </>
+    
     )
   };
   

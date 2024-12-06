@@ -70,20 +70,11 @@
     transform: translateY(0);
   }
 }
-/* Keyframes for zoom in and zoom out animation */
-@keyframes zoomInOut {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1); /* Slight zoom-in */
-  }
-  100% {
-    transform: scale(1); /* Back to normal size */
-  }
-}
 
-/* Apply the animation to the blog image */
+
+
+
+  /* Apply the animation to the blog image */
 .blog-img {
   width: 100%;
   height: auto;
@@ -91,5 +82,15 @@
   max-height: 650px;
   transform: none;
   pointer-events: none; /* Disables all interactions (optional) */
-  animation: zoomInOut 3s infinite ease-in-out; /* Adjust duration as needed */
+  animation: zoomIn 3s ease-in-out forwards; /* Run once and stay at the final state */
+}
+
+/* Keyframes for zoom in animation */
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1); /* Slight zoom-in */
+  }
 }

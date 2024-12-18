@@ -24,6 +24,12 @@
     width: 48%; /* Adjust image width for two-column layout */
   }
 }
+@media (max-width: 480px) {
+  .gallery-image {
+    margin-top: 80px;
+  }
+}
+
 @keyframes fadeZoomIn {
   from {
     opacity: 0;

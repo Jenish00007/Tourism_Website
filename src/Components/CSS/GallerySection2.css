@@ -51,7 +51,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .gallery-title {
         font-size: 1.5rem;
     }
@@ -59,6 +59,10 @@
         gap: 10px;
         flex-direction: column; /* Stack items vertically on small screens */
         align-items: center; /* Center-align the stacked items */
+    }
+    .gallery-item {
+        align-items: center;
+        margin-bottom: 10px;
     }
 }
 @media screen and (min-width: 1024px) {

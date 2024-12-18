@@ -6,7 +6,7 @@ import Section1 from '../Components/Section1';  // Section1 Component
 import HomeSection1 from '../Components/HomeSection1';  // HomeSection1 Component
 import HomeSection3 from '../Components/HomeSection3';  // HomeSection3 Component
 import HomeSection4 from '../Components/HomeSection4';  // HomeSection4 Component
-
+import FreeTrial from "../Components/FreeTrial";
 
 const Home = () => {
   const section4Ref = useRef(null);  // Create a ref for HomeSection4
@@ -31,6 +31,9 @@ const Home = () => {
       {/* HomeSection4 with the ref */}
       <div ref={section4Ref}>
         <HomeSection4 />
+      </div>
+      <div> 
+        <FreeTrial/>
       </div>
     </>
   );

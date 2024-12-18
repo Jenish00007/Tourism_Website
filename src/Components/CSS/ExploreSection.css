@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 60px;
-    background: linear-gradient(135deg,lightgrey,white 100%); 
+    background: linear-gradient(to bottom right, Gray, white);
     text-align: center;
     min-height: 100vh; /* Full height */
     position: relative;

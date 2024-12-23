@@ -2,6 +2,8 @@
 import './App.css'; // Ensure your styles are properly linked
 import React from "react";
 import { Routes, Route } from "react-router-dom";  // Import necessary components from react-router-dom
+import Signup from "./Components/Signup";
+import Login from "./Components/Login"
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Blog from "./Pages/Blog";
@@ -17,7 +19,7 @@ import Explore from "./Pages/Explore";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">      
       {/* Header Component */}
       <Header />
       
@@ -26,6 +28,8 @@ function App() {
       
       {/* Routes for different pages */}
       <Routes>
+        <Route path="signup" element={<Signup />} />
+        <Route path="login" element={<Login />} />
         <Route path="/" element={<Home />} />           {/* Home Page */}
         <Route path="about" element={<About />} />     {/* About Page */}
         <Route path="contact" element={<Contact />} /> {/* Contact Page */}

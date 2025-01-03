@@ -1,90 +1,87 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #e0f7d9;
-  }
-  
-  .signup-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.signup-box {
+  background: rgba(0, 0, 0, 0.5); /* Adds a translucent background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signup-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.signup-btn:hover {
+  background-color: #218838;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styling for phones */
+@media (max-width: 768px) {
   .signup-box {
-    background-color: blue;
     width: 90%;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
   }
-  
+
   .signup-box h2 {
-    text-align: center;
-    color: #333333;
+    font-size: 1.5rem;
   }
-  
-  .form-group {
-    margin-bottom: 15px;
+
+  .input-group input {
+    padding: 8px;
   }
-  
-  .form-group label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #666666;
+
+  .signup-btn {
+    font-size: 0.9rem;
   }
-  
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-  }
-  
-  .signup-button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #28a745;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .signup-button:hover {
-    background-color: #218838;
-  }
-  
-  .signin-link {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .signin-link a {
-    color: #28a745;
-    text-decoration: none;
-  }
-  
-  .signin-link a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .signup-box {
-      padding: 15px;
-    }
-  
-    .form-group input {
-      font-size: 14px;
-    }
-  
-    .signup-button {
-      font-size: 14px;
-    }
-  }
-  
+}

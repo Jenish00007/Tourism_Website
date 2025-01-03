@@ -1,46 +1,45 @@
-import React from "react";
+import React from 'react';
 import './CSS/Login.css';
 
-const Login = () => {
+const LoginPage = () => {
+  const backgroundImage = {
+    backgroundImage: `url('./New.webp')`, // Replace 'New.jpg' with the correct path to your image
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
+
   return (
-    <div className="login-container">
+    <div style={backgroundImage}>
       <div className="login-box">
-        <div className="logo">
-        </div>
-        <h2>Log In</h2>
+        <h2>Login</h2>
         <form>
-          <div className="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="johndoe@xyz.com" />
+          <div className="input-group">
+            <label htmlFor="email">Enter your email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
           </div>
-          <div className="form-group">
-            <label>Password</label>
-            <input type="password" placeholder="********" />
+          <div className="input-group">
+            <label htmlFor="password">Enter your password</label>
+            <input type="password" id="password" placeholder="Enter your password" />
           </div>
           <div className="options">
-            <div>
-              <input type="checkbox" id="remember-me" />
-              <label htmlFor="remember-me">Remember me</label>
-            </div>
-            <a href="/forgot-password" className="forgot-password">
-              Forgot password?
-            </a>
+            <label>
+              <input type="checkbox" /> Remember me
+            </label>
+            <a href="#forgot-password" className="forgot-password">Forgot password?</a>
           </div>
-          <button type="submit" className="login-button">Log In</button>
+          <button type="submit" className="login-btn">Log In</button>
         </form>
-        <div className="social-login">
-          <p>Or Sign In with</p>
-          <div className="social-icons">
-            <a href="/auth/facebook" className="facebook-icon">F</a>
-            <a href="/auth/google" className="google-icon">G</a>
-            <a href="/auth/apple" className="apple-icon">A</a>
-          </div>
-        </div>
-        <p className="signup-link"> Don't have an account? <a href="/signup">Sign Up</a>
+        <p className="register">
+          Don't have an account? <a href="/signup">Sign Up</a>
         </p>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default LoginPage;
